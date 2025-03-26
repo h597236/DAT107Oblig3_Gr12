@@ -32,7 +32,7 @@ public class Prosjektdeltagelse {
     public int getTimer() { return timer; }
 
     // Settere
-    public void setId(ProsjektdeltagelseId id) { this.id = id; }
+    public void setId(int ProsjektdeltagelseId) { this.id = id; }
     public void setAnsatt(Ansatt ansatt) { this.ansatt = ansatt; }
     public void setProsjekt(Prosjekt prosjekt) { this.prosjekt = prosjekt; }
     public void setRolle(String rolle) { this.rolle = rolle; }
