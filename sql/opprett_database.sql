@@ -1,4 +1,4 @@
--- Opprett schema for oppgaven
+-- Opprette schema til Oblig3
 CREATE SCHEMA Oblig3;
 
 SET search_path TO Oblig3;
