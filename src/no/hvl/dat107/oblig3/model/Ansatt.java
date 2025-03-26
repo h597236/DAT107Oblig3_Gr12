@@ -10,24 +10,25 @@ import java.util.Set;
 public class Ansatt {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ansatt_id")
     private int ansattId;
 
-    @Column(nullable = false, unique = true, length = 4)
+    @Column(name = "brukernavn", nullable = false, unique = true, length = 4)
     private String brukernavn;
 
-    @Column(nullable = false, length = 50)
+    @Column(name = "fornavn", nullable = false, length = 50)
     private String fornavn;
 
-    @Column(nullable = false, length = 50)
+    @Column(name = "etternavn", nullable = false, length = 50)
     private String etternavn;
 
-    @Column(nullable = false)
+    @Column(name = "dato_ansettelse", nullable = false)
     private LocalDate datoAnsettelse;
 
-    @Column(nullable = false, length = 50)
+    @Column(name = "stilling", nullable = false, length = 50)
     private String stilling;
 
-    @Column(nullable = false)
+    @Column(name = "månedslønn", nullable = false)
     private double månedslønn;
 
     @ManyToOne

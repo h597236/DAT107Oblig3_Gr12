@@ -4,7 +4,7 @@
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
 
-    <persistence-unit name="personPersistenceUnit" transaction-type="RESOURCE_LOCAL">
+    <persistence-unit name="Oblig3PU" transaction-type="RESOURCE_LOCAL">
 
         <!-- Må legge til ny class for kvar fil enn vil bruke -->
         <class>no.hvl.dat107.oblig3.model.Ansatt</class>

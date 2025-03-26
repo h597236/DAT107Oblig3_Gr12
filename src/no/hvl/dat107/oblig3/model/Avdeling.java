@@ -9,9 +9,10 @@ import java.util.Set;
 public class Avdeling {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "avdeling_id")
     private int avdelingId;
 
-    @Column(nullable = false, length = 100)
+    @Column(name = "navn", nullable = false, length = 100)
     private String navn;
 
     @OneToOne
